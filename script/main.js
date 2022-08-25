@@ -40,3 +40,34 @@ function onClick (event) {
   let boton = document.getElementById("enviar");
     boton.addEventListener("click", onClick);
   
+    
+    //recibir el tiempo del clima
+    let temp;
+    let nombre;
+    let viento;
+    let nacionalidad;
+  
+async function getWeather(){
+   await fetch("https://api.openweathermap.org/data/2.5/weather?lat=-24.16854505399388&lon=-65.32021464441563&appid=a82606b099222f528c9b4d414865f352", {
+      method:"GET"
+    })
+    .then((response) => response.json())
+    .then((json) => {
+      temp = json.main.temp;
+      nombre = json.name;
+      viento = json.wind.speed;
+      nacionalidad = json.sys.country
+      console.log(json);
+    })
+    .catch((error) => console.log(error + "Algo paso aqui...ERROR!"));
+
+    tarjetaPadre.innerHTML = `<h4><b>${nombre} ${nacionalidad}</b></h4>
+    <p>Temperatura: ${temp}</p>
+    <p>Viento: ${viento}</p>`
+    console.log(tarjetaPadre);
+  }
+  getWeather();
+  
+const tarjetaPadre = document.querySelector(".tarjeta-central");
+
+
