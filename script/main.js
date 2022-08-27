@@ -53,7 +53,7 @@ async function getWeather(){
     })
     .then((response) => response.json())
     .then((json) => {
-      temp = json.main.temp;
+      temp = json.main.temp-273.15;
       nombre = json.name;
       viento = json.wind.speed;
       nacionalidad = json.sys.country
@@ -62,8 +62,8 @@ async function getWeather(){
     .catch((error) => console.log(error + "Algo paso aqui...ERROR!"));
 
     tarjetaPadre.innerHTML = `<h4><b>${nombre} ${nacionalidad}</b></h4>
-    <p>Temperatura: ${temp}</p>
-    <p>Viento: ${viento}</p>`
+    <p>Temperatura: ${temp.toFixed(2)} °C</p>
+    <p>Viento: ${viento} Km/h</p>`
     console.log(tarjetaPadre);
   }
   getWeather();

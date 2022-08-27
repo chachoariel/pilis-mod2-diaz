@@ -7,8 +7,8 @@
 /* General */
 html, body{
     font-family: 'Montserrat', sans-serif;
-    background: #797171;
-    color: #ffffff;
+    background: #810955;
+    color: #FFF9D7;
     scroll-behavior: smooth; 
 }
 a{
@@ -16,7 +16,7 @@ a{
 }
 /* navbar */
 #navbar a{
-    color: #ffffff;
+    color: #FFF9D7 ;
 }
 /* #navbar .logo{
     text-transform: uppercase;
@@ -52,7 +52,7 @@ a{
     text-align: center;
 }
 #navbar ul li a:hover{
-    background: #a0fa93;
+    background: #EE81B3;
 }
 header{
     padding: 60px;
@@ -60,12 +60,12 @@ header{
     display: block;
 }
 main{
-background: green;
+background: #7D1E6A;
 display: block;
 /* padding: 200px; */
 }
 footer{
-    background: yellow;
+    background: #7D1E6A;
     display: block;
 }
 /* #mainheader{
@@ -86,7 +86,8 @@ footer{
 
  /* seccion Home */
  #home {
-    background: #841934;
+    /* background: #610C63; */
+    background: #7D1E6A;
     /* padding: 400px ; */
   }
   
@@ -113,7 +114,7 @@ h2 {
     font-size: 15px; 
     text-transform: uppercase;
     /* font-weight: 300; */
-    color: #FFF;;
+    color: #FFF9D7;;
   }
 
   p {
@@ -125,7 +126,7 @@ h2 {
     /* The Event */
 
     #the-event {
-        background: #a83854;
+        background: #810955;
         /* padding: 400px ; */
       }
       
@@ -163,7 +164,7 @@ h2 {
 
   /* Nosotros */
   #about {
-    background: #841934;
+    background: #7D1E6A;
     /* padding: 400px ; */
   }
   
@@ -182,28 +183,6 @@ h2 {
     width: 90%;
 }
 
-#about img{
-  width: 4%;
-}
-
-#about .mapa{
-  float: right;
-}
-
-#about #clima{
-  float: left;
-}
-
-#about #clima {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-#clima:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.tarjeta-central{
-  padding: 2px 16px;
-}
 /*   .about-description .large {  
     padding-bottom: 10px;
     font-size: 1.25rem;
@@ -226,7 +205,7 @@ h2 {
 
   /* Registro */
 	  #register {
-        background: #720420;
+        background: #810955;
         padding: 120px 0;
       }
       
@@ -270,14 +249,56 @@ h2 {
       }
       
       .btn-light {
-        background: #841934;
+        background: #7D1E6A;
         border: 1px solid #841934;
-        color: #fff;
+        color: #FFF9D7;
         width: 100%;
       }
       
       .btn-light:hover {
-        background: #fff;
-        border: 1px solid #841934;
-        color: #841934;
+        background: #EE81B3;
+        border: 1px solid #810955;
+        color: #FFF9D7;
       }
+
+/* Clima */
+      
+/* #about img{
+  width: 4%;
+} */
+
+#about2 .mapa{
+  float: right;
+  width: 50%;
+}
+
+#about2 #clima{
+  float: left;
+  width: auto;
+}
+
+
+#about2 #clima {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+#clima:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.tarjeta-central{
+  padding: 2px 16px;
+}
+.about2-title {
+  color: #FFF9D7;
+  /* padding-top: 340px; */
+}
+#about2 #whatsapp {
+  display: flex;
+  justify-content: center;
+  
+}
+#about2 #whatsapp a{
+  color: #FFF9D7;
+  margin: 0 auto;
+
+}
